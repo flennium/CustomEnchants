@@ -1,0 +1,30 @@
+# Plugin Configuration
+plugin:
+  prefix: "ᴄᴇɴᴄʜᴀɴᴛs » "
+
+
+# Configuration for enchantments (enchants)
+enchants:
+  # Heal enchantment
+  heal:
+    description: "Restore a portion of health to yourself or an ally." # Description of the heal enchantment
+    max_level: 10  # Maximum level for the heal enchantment
+    chance: 50     # Chance (in percentage) to successfully apply the heal effect
+
+  # Lightning enchantment
+  lightning:
+    description: "Strike your enemies with a bolt of lightning." # Description of the lightning enchantment
+    max_level: 10  # Maximum level for the lightning enchantment
+    chance: 50     # Chance (in percentage) to successfully apply the lightning effect
+
+  # Invisibility enchantment
+  invisibility:
+    description: "Become invisible for a short time." # Description of the invisibility enchantment
+    max_level: 10  # Maximum level for the invisibility enchantment
+    chance: 50     # Chance (in percentage) to successfully apply the invisibility effect
+
+  # Frost enchantment
+  frost:
+    description: "Freeze your enemies in place." # Description of the frost enchantment
+    max_level: 10  # Maximum level for the frost enchantment
+    chance: 50     # Chance (in percentage) to successfully apply the frost effect
