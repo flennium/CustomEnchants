@@ -1,7 +1,7 @@
 name: CustomEnchants
 version: '1.0'
 main: org.flennn.CustomEnchants
-api-version: '1.21'
+api-version: '1.20'
 author: flennn
 
 commands:

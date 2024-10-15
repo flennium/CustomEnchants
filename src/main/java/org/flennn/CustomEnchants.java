@@ -41,7 +41,7 @@ public final class CustomEnchants extends JavaPlugin {
         config = getConfig();
 
         // Load prefix using the mm method first time using MiniMessage uwu
-        prefix = config.getString("plugin.prefix", "<purple><bold>ᴄᴇɴᴄʜᴀɴᴛs » </bold></purple> <reset>");
+        prefix = config.getString("plugin.prefix", "<rainbow><bold>ᴄᴇɴᴄʜᴀɴᴛs » </bold></rainbow> <reset>");
 
 
         // load enchants details from config

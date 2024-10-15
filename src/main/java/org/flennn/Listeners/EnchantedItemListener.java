@@ -44,6 +44,7 @@ public class EnchantedItemListener implements Listener {
             if (enchantData != null) {
                 Entity target = event.getAttacked();
                 enchantmentsHandler.handleEnchantments(player, itemInHand, target);
+                logItemDetails(itemInHand, player);
             }
         }
     }

@@ -1,5 +1,5 @@
 plugin:
-  prefix: "<purple><bold>ᴄᴇɴᴄʜᴀɴᴛs » </bold></purple> <reset>"
+  prefix: "<rainbow><bold>ᴄᴇɴᴄʜᴀɴᴛs » </bold></rainbow> <reset>"
 
 
 # Configuration for enchantments (enchants)
@@ -8,16 +8,16 @@ enchants:
   heal:
     description: "Restore a portion of health to yourself." # Description of the heal enchantment
     max_level: 10  # Maximum level for the heal enchantment
-    chance: 50     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the heal effect
+    chance: 200     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the heal effect
 
   # Lightning enchantment
   lightning:
-    description: "Strike your enemies with a bolt of lightning." # Description of the lightning enchantment
+    description: "Strike your enemies with a lightning." # Description of the lightning enchantment
     max_level: 10  # Maximum level for the lightning enchantment
-    chance: 50     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the lightning effect
+    chance: 200     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the lightning effect
 
   # Confusion enchantment
   confusion:
-    description: "Randomly shuffles the target's hotbar items upon hit, causing chaos and disorientation in battle.." # Description of the confusion enchantment
+    description: "Randomly shuffles the target's hotbar." # Description of the confusion enchantment
     max_level: 10  # Maximum level for the frost enchantment
-    chance: 50     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the frost effect
+    chance: 200     # Chance (in percentage , 1000% is a guaranteed effect apply) to successfully apply the frost effect

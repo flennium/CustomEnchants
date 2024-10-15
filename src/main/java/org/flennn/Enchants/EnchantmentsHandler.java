@@ -38,7 +38,7 @@ public class EnchantmentsHandler {
                 double currentHealth = player.getHealth();
                 player.setHealth(Math.min(currentHealth + healAmount,
                         Objects.requireNonNull(player.getAttribute(Attribute.GENERIC_MAX_HEALTH)).getValue()));
-                player.sendMessage("You have been healed for " + healAmount + " health!");
+                player.sendMessage(Enchants.formatName("You have been healed for " + healAmount + " health!"));
             }
         }
     }
@@ -53,7 +53,7 @@ public class EnchantmentsHandler {
             if (ChanceManager.isChanceSuccessful(baseChance, level, 15)) {
                 target.getWorld().strikeLightning(target.getLocation());
                 if (target instanceof Player targetPlayer) {
-                    targetPlayer.sendMessage("You have been struck by lightning!");
+                    targetPlayer.sendMessage(Enchants.formatName("You have been struck by lightning!"));
                 }
             }
         }
@@ -69,7 +69,7 @@ public class EnchantmentsHandler {
             if (ChanceManager.isChanceSuccessful(baseChance, level, 15)) {
                 if (target instanceof Player targetPlayer) {
                     shuffleHotbar(targetPlayer);
-                    targetPlayer.sendMessage("You feel confused! Your hotbar items have been shuffled.");
+                    targetPlayer.sendMessage(Enchants.formatName("You feel confused! Your hotbar items have been shuffled."));
                 }
             }
         }

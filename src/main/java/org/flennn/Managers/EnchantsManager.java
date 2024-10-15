@@ -26,8 +26,15 @@ public class EnchantsManager {
 
         Map<String, Object> enchantments = enchantData != null ? gson.fromJson(enchantData, Map.class) : new HashMap<>();
 
-        enchantments.put(enchantName, level);
+        if (enchantments.containsKey(enchantName)) {
+            int existingLevel = ((Number) enchantments.get(enchantName)).intValue();
 
+            if (level <= existingLevel) {
+                return;
+            }
+        }
+
+        enchantments.put(enchantName, level);
         String updatedEnchantData = gson.toJson(enchantments);
         pdc.set(CUSTOM_ENCHANT_KEY, PersistentDataType.STRING, updatedEnchantData);
 
@@ -36,6 +43,7 @@ public class EnchantsManager {
 
         item.setItemMeta(meta);
     }
+
 
     private static Map<Enchants, Object> formatEnchants(Map<String, Object> enchantments) {
         Map<Enchants, Object> formattedEnchants = new HashMap<>();

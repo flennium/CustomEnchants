@@ -175,7 +175,7 @@ public class CustomEnchantsCommands implements CommandExecutor, TabCompleter {
         } else if (args.length == 2 && args[0].equalsIgnoreCase("add")) {
             for (Enchants enchant : Enchants.values()) {
                 if (enchant != null) {
-                    completions.add(enchant.getName());
+                    completions.add(enchant.getName().toUpperCase());
                 }
             }
         } else if (args.length == 3 && args[0].equalsIgnoreCase("add")) {
@@ -184,7 +184,7 @@ public class CustomEnchantsCommands implements CommandExecutor, TabCompleter {
             }
         } else if (args.length == 2 && args[0].equalsIgnoreCase("remove")) {
             for (Enchants enchant : Enchants.values()) {
-                completions.add(enchant.getName());
+                completions.add(enchant.getName().toUpperCase());
             }
         } else if (args.length == 2 && args[0].equalsIgnoreCase("removeall")) {}
 
