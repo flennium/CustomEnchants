@@ -5,8 +5,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 public enum Enchants {
     HEAL("Heal"),
     LIGHTNING("Lightning"),
-    INVISIBILITY("Invisibility"),
-    FROST("Frost");
+    CONFUSION("Confusion");
 
     private final String name;
     private String description;

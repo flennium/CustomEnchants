@@ -1,0 +1,18 @@
+name: CustomEnchants
+version: '1.0'
+main: org.flennn.CustomEnchants
+api-version: '1.21'
+author: flennn
+
+commands:
+  customenchant:
+    description: Custom Enchantments command
+    usage: /<command>
+    permission: customenchant.use
+
+
+
+permissions:
+  customenchant.use:
+    description: Allows the player to use custom enchant commands
+    default: op

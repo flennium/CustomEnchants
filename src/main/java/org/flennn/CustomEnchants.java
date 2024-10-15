@@ -16,11 +16,11 @@ public final class CustomEnchants extends JavaPlugin {
 
     public static CustomEnchants instance;
     public static FileConfiguration config;
-    public static Component prefix;
+    public static String prefix;
 
     public static final PluginManager pm = Bukkit.getPluginManager();
 
-    public static Component getPrefix() {
+    public static String getPrefix() {
         return prefix;
     }
 
@@ -41,7 +41,7 @@ public final class CustomEnchants extends JavaPlugin {
         config = getConfig();
 
         // Load prefix using the mm method first time using MiniMessage uwu
-        prefix = Components.mm(config.getString("plugin.prefix", "ᴄᴇɴᴄʜᴀɴᴛs » "));
+        prefix = config.getString("plugin.prefix", "<purple><bold>ᴄᴇɴᴄʜᴀɴᴛs » </bold></purple> <reset>");
 
 
         // load enchants details from config
@@ -51,7 +51,7 @@ public final class CustomEnchants extends JavaPlugin {
 
         // log loaded enchants from config
         for (Enchants enchant : Enchants.values()) {
-            Bukkit.getConsoleSender().sendMessage(prefix.append(Component.text(enchant.getName() + ": " + enchant.getDescription() +
+            Bukkit.getConsoleSender().sendMessage((Components.mm(prefix + enchant.getName() + ": " + enchant.getDescription() +
                     ", Max Level: " + enchant.getMaxlvl() +
                     ", Chance: " + enchant.getChance() + "%")));
         }
